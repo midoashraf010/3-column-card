@@ -1,0 +1,110 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 1rem;
+  transform: translatex(320px);
+  -webkit-transform: translatex(320px);
+  -moz-transform: translatex(320px);
+  -ms-transform: translatex(320px);
+  -o-transform: translatex(320px);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --par-color: hsla(0, 0%, 100%, 0.75);
+  --neutral: hsl(0, 0%, 95%);
+
+  --orange-co: hsl(31, 77%, 52%);
+  --cyan-co: hsl(184, 100%, 22%);
+  --green-co: hsl(179, 100%, 13%);
+}
+body {
+  font-size: 15px;
+  user-select: none;
+  background-color: var(--neutral);
+}
+.body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 950px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container .one {
+  background-color: var(--orange-co);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.container .two {
+  background-color: var(--cyan-co);
+}
+.container .three {
+  background-color: var(--green-co);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.container .header {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--neutral);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.container .par {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--par-color);
+  margin-bottom: 5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+.container button {
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  transition-duration: 0.3s;
+}
+.container .one button {
+  color: var(--orange-co);
+}
+.container .one button:hover {
+  background-color: var(--orange-co);
+  color: var(--neutral);
+  outline: 2px solid var(--neutral);
+  cursor: pointer;
+}
+.container .two button {
+  color: var(--cyan-co);
+}
+.container .two button:hover {
+  background-color: var(--cyan-co);
+  color: var(--neutral);
+  outline: 2px solid var(--neutral);
+  cursor: pointer;
+}
+.container .three button {
+  color: var(--green-co);
+}
+.container .three button:hover {
+  background-color: var(--green-co);
+  color: var(--neutral);
+  outline: 2px solid var(--neutral);
+  cursor: pointer;
+}
+.container .co-content {
+  margin: 2rem 0rem 3rem 2rem;
+}
